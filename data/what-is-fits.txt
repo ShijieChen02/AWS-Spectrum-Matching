@@ -1,0 +1,11 @@
+
+FITS is a file format commonly used in astronomy for storing and exchanging scientific data. 
+The FITS (Flexible Image Transport System) format is designed to be used for the storage, transmission, and processing of scientific data, particularly astronomical and astrophysical data. 
+It supports various types of data, including images, tables, and multi-dimensional arrays.
+
+FITS files typically consist of a header section and a data section. 
+The header contains metadata information such as the observation date, telescope parameters, and other relevant details. 
+The data section contains the actual scientific data, which can include images, spectra, or other types of data.
+
+Due to its flexibility and support for metadata, FITS has become a widely adopted standard in the field of astronomy for sharing and archiving data. 
+Astronomical observatories and research institutions commonly use FITS files to store and exchange data obtained from telescopes and other observation instruments.
