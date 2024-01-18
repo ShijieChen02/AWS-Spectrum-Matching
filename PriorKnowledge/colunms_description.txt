@@ -1,0 +1,17 @@
+ (a) flux is light intensity at a given wavelength. It is theoretically nonnegative, but with
+ noise it can be negative.
+ (b) loglam is log(x=wavelength, base=10), so wavelength = 10^loglam.
+ (c) ivar (“inverse variance”) is an estimated variance of the ith flux. (Each
+ spectrum is constructed from several observations and each flux[i] value is an average
+ of several underlying measurements)
+ (d) and_mask is 0 for a good observation. We could exclude data with nonzero and_mask.
+ (Masks flag problems in the data. and_mask indicates whether there is bad data at this
+ (wavelength, flux) pixel in all observations.)
+ (e) or_mask is 0 for a good observation. We can ignore it. (It says there is bad data at this
+ pixel in at least one observation.)
+ (f) wdisp is the resolution of the spectrograph at that wavelength. We can ignore it, but 
+we want to keep it.
+ (g) sky is the spectrum of the sky, mostly already subtracted out from flux. We can ignore
+ it, but we want to keep it. (Some search algorithms may need to mask out +/-5 pixels 
+ around 5577 Angstroms to avoid spurious matches to a strong emission line due to 
+ Earth’s atmosphere.)
