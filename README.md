@@ -6,7 +6,7 @@
 3. Be careful of pricing. Using sample data only for a trial is recommended. Once you set up whole workflow, you could try more data to make it real.
 
 ## Backgound:
-1. Look through '/PriorKnowledge' roughly.
+1. Look through '/PriorKnowledge' + 'exapmleMatch.pdf' + 'example_for_illustration.pdf' roughly.
 2. We have real-time spectrum data(suppose it's .fits file, where 'fits' is Flexible Image Transport System) from many astronomical observatories.
 3. Our purpose is find out how much does a new spectrum matches our target Lyman-break spectrum based on person-correlation(we call this "distance"), and make the results well managed while also managing the raw data.
 4. AS data accumulates, we need big data cluster to process the results of distances. For example, we want to figure out which observatory find the most "near" spectrum in the past two months. So we need a big data cluster aggregate several key indicators everyeveryday. 
