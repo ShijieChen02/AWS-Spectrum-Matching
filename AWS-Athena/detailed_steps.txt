@@ -1,0 +1,23 @@
+#After Glue part
+
+1. go to Athena, choose corresponding database and table where you stored the metadata of result table in Glue.
+2. You cloud check the table schema on the left
+3. Type in Presto SQL, RUN
+  sample:
+  "
+    SELECT
+      year,
+      month,
+      day,
+      MIN(mindis) AS min_mindis
+  FROM
+      your_glue_table
+  WHERE
+      DATE_PARSE(CONCAT(CAST(year AS VARCHAR), '-', CAST(month AS VARCHAR), '-', CAST(day AS VARCHAR)), '%Y-%m-%d') BETWEEN CURRENT_DATE - INTERVAL '10' DAY AND CURRENT_DATE
+  GROUP BY
+      year,
+      month,
+      day;
+
+  "
+4. You could check the result in the UI, or corresponding output path you set in your settings.
