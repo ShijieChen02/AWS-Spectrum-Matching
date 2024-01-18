@@ -1,9 +1,11 @@
 # AWS-Spectrum-Matching
 
+## Notation:
 1. This is a AWS end-to-end project, where you work like "Kinesis -> Lambda -> EMR -> Glue -> Athena".
 2. Only a tiny part of real data(up to 10M spectrums per day) are provided in '/data', you could use it as a trial and the data structure is simple, easy to generate your own.
+3. Be careful of pricing. Using sample data only for a trial is recommended. Once you set up whole workflow, you could try more data to make it real.
 
-## backgound:
+## Backgound:
 1. Look through '/priorKnowledge' roughly.
 2. We have real-time spectrum data(suppose it's .fits file, where 'fits' is Flexible Image Transport System) from many astronomical observatories.
 3. Our purpose is find out how much does a new spectrum matches our target Lyman-break spectrum based on person-correlation(we call this "distance"), and make the results well managed while also managing the raw data.
