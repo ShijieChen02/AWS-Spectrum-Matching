@@ -22,5 +22,7 @@
 
 ## Contact
 If you think something's wrong with this project or have a better idea, please contact me.
+  
 author: Simon Chen
+  
 email: schen935@wisc.edu
