@@ -1,0 +1,5 @@
+# after EMR conducted the hql or the hql step:
+
+observatory_spectrum_distance_app_df is now at 's3://your-s3-bucket/target-table/' where you put the result.
+
+Go to AWS Glue crawler to crawl this table into 'Glue tables'.
