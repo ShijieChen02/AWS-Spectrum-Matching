@@ -9,12 +9,14 @@
       year,
       month,
       day,
+      observatory_id,
       MIN(mindis) AS min_mindis
   FROM
       your_glue_table
   WHERE
       DATE_PARSE(CONCAT(CAST(year AS VARCHAR), '-', CAST(month AS VARCHAR), '-', CAST(day AS VARCHAR)), '%Y-%m-%d') BETWEEN CURRENT_DATE - INTERVAL '10' DAY AND CURRENT_DATE
   GROUP BY
+      observatory_id,
       year,
       month,
       day;
