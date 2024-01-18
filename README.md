@@ -19,3 +19,8 @@
 4. AWS Glue
 5. AWS Athena
 (Also, you should acknowledged some S3 basic managements and some IAM controls)
+
+## Contact
+If you think something's wrong with this project or have a better idea, please contact me.
+author: Simon Chen
+email: schen935@wisc.edu
