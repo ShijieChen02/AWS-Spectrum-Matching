@@ -30,7 +30,7 @@ for fits_file in fits_files:
         data = hdul[1].data
         data_table = Table(data)
         
-        observatory_id = int(np.random.choice([1,2,3])) # stimulates astronomical observatory id.
+        observatory_id = int(np.random.choice([1,2,3])) # simulates astronomical observatory id.
         flux = standardize_list(list(data_table['flux']))
         flux = [ float(x) for x in flux]
         loglam = [ float(x) for x in data_table['loglam']]
